@@ -1,0 +1,31 @@
+🔐 What is Encryption?
+
+Encryption is the process of converting plain, readable data into unreadable, scrambled data to protect it from unauthorized access.
+
+📌 Example:
+You type “Hello” → Encryption turns it into “7x@A#92!d” (cipher text).
+
+Only someone with the correct key can turn it back into the original message.
+
+🔸 Why Encryption is used?
+
+To protect sensitive information
+
+To secure data in transit (e.g., WhatsApp messages, HTTPS)
+
+To secure data at rest (e.g., passwords, files)
+
+🔓 What is Decryption?
+
+Decryption is the reverse process of encryption.
+
+It converts the scrambled, unreadable data (cipher text) back into original, readable data (plain text) using a key.
+
+📌 Example:
+Cipher text “7x@A#92!d” → Decryption → “Hello”
+
+🔑 Simple Analogy
+
+Encryption = locking your message with a key
+
+Decryption = unlocking the message with the key

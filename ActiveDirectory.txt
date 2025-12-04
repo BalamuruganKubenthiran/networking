@@ -1,0 +1,20 @@
+Active Directory (AD) is a directory service created by Microsoft that is used in networking to manage users, computers, permissions, and security inside an organization.
+
+Think of it as the central brain of a Windows-based network.
+
+✅ Simple Definition
+
+Active Directory is a centralized database that stores information about:
+
+Users
+
+Computers
+
+Groups
+
+Printers
+
+Policies
+and controls how they interact inside the network.
+
+It allows network administrators to manage everything from one place.
