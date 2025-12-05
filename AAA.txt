@@ -1,0 +1,35 @@
+In networking, AAA stands for Authentication, Authorization, and Accounting. It’s a fundamental framework used to manage and secure access to network resources.
+
+Authentication — verifying that a user (or device) is who they claim to be. Typically this involves credentials like username/password, certificates, etc. 
+
+
+Authorization — once authenticated, deciding what resources or actions the user is permitted to access or perform. For example: which servers they can reach, what commands they can run, what services they can use. 
+
+
+Accounting — tracking and logging what the user does: when they logged in, what resources they used, how much data they transferred, how long they were connected, etc. Useful for auditing, usage monitoring, billing, and capacity planning. 
+Webopedia
+
+
+✅ Why AAA is important
+
+It enforces proper security controls — only valid users get access. 
+
+
+It allows granular control over who can do what on a network (differentiated permissions per user or group). 
+
+
+It provides auditing/logging so you can see activity history — helpful for compliance, troubleshooting, billing, or monitoring. 
+
+
+It supports scalability and centralized user management (especially in bigger networks). 
+
+📡 How AAA is implemented
+
+Typically, AAA is implemented via a client/server model:
+
+The “client” is a network-access device (like a router, switch, VPN concentrator, wireless access point, etc.) that acts as a gatekeeper.
+
+The “server” is the central AAA server that stores user credentials, policies, and logs. 
+
+
+Common protocols implementing AAA are RADIUS and TACACS+ (among others).

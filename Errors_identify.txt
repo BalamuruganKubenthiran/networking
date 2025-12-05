@@ -1,0 +1,177 @@
+🖧 What Are Networking Errors?
+
+Networking errors are problems that stop computers or devices from communicating with each other over a network (LAN, WAN, Internet).
+
+These errors can occur in:
+
+DNS (domain name resolution)
+
+IP address / routing
+
+DHCP
+
+Firewall
+
+Switch / VLAN
+
+WiFi
+
+Servers / ports
+
+Applications (HTTP, TCP, etc.)
+
+A networking error means something in the communication path is broken.
+
+🔍 How to Identify Networking Errors (Step-by-step)
+
+Think of it like troubleshooting from Layer 1 to Layer 7.
+
+1️⃣ Check Physical Layer (Cables, Ports, Link Light)
+
+Common symptoms:
+
+No internet
+
+Cable unplugged
+
+Port blinking orange or not blinking
+
+WiFi not connecting
+
+How to identify:
+
+Check if the network cable is connected
+
+Check if port lights are ON
+
+Test with another cable / port
+
+2️⃣ Check IP Address Problems
+
+Symptoms:
+
+Wrong IP
+
+APIPA 169.254.x.x
+
+“Network unreachable”
+
+How to identify:
+
+Run ip a or ifconfig
+
+Verify IP, subnet mask, default gateway
+
+Ping your gateway:
+
+ping 192.168.1.1
+
+3️⃣ Check DNS Errors
+
+Symptoms:
+
+Only websites not loading
+
+“DNS_PROBE_FINISHED_NXDOMAIN”
+
+“Server not found”
+
+How to identify:
+
+Try pinging domain:
+
+ping google.com
+
+
+Try pinging IP:
+
+ping 8.8.8.8
+
+
+If IP works and domain fails → DNS issue.
+
+4️⃣ Check Routing Issues
+
+Symptoms:
+
+“Destination host unreachable”
+
+“Request timed out”
+
+How to identify:
+
+Check routing table:
+
+ip r
+
+
+Trace route:
+
+traceroute google.com
+
+5️⃣ Check Firewall Blocking
+
+Symptoms:
+
+Application not accessible
+
+Cannot connect to a port
+
+“Connection refused”
+
+How to identify:
+
+Check firewall:
+
+sudo ufw status
+
+
+Test port:
+
+telnet IP port
+
+6️⃣ Check Server/Service Problems
+
+Symptoms:
+
+Website running but showing 500, 502, 503
+
+Cannot connect to MySQL, Apache, Nginx
+
+How to identify:
+
+Check service status:
+
+systemctl status nginx
+systemctl status mysql
+
+
+Check logs for errors
+
+7️⃣ Check WiFi Issues
+
+Symptoms:
+
+Low signal
+
+Authentication failed
+
+Frequent disconnects
+
+How to identify:
+
+Check WiFi signal strength
+
+Restart router
+
+Try another device
+
+🧪 Most Common Networking Errors & How They Look
+Error	Meaning
+Destination Host Unreachable	No route to device
+Request Timed Out	No reply from device
+DNS_PROBE_FINISHED_NXDOMAIN	DNS cannot find domain
+Connection Refused	Port is closed / service down
+APIPA 169.254.x.x	DHCP server not giving IP
+404 Not Found	Server can't find the page
+500/502/503	Server internal error
